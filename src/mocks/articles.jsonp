@@ -1,0 +1,29 @@
+[
+    {
+      'repeat(20)': {
+        _id: '{{guid()}}',
+        coverUrl: 'http://lorempixel.com/700/1080/',
+        dateCreated: '{{date(new Date(2017, 0, 1), new Date())}}',
+        title(tags){
+          return tags.lorem(tags.integer(3, 9), "words");
+        },
+        subtitle: '{{lorem(1, "sentences")}}',
+        textBody(tags) {
+         return tags.lorem(tags.integer(3, 10), "paragraphs");
+        },
+        comments: [
+          {
+            'repeat(0, 10)': {
+                text: '{{lorem(1, "paragraphs")}}',
+              author: '{{firstName()}} {{surname()}}',
+            },
+          }
+        ],
+        tags: [
+          {
+            'repeat(2)': '{{random("tech", "education", "softskills", "personal", "lgbt", "politcs")}}'
+          }
+        ],
+      }
+    }
+  ]

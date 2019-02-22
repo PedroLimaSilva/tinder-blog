@@ -1,0 +1,69 @@
+@import "../../../scss/constants.scss";
+
+.item {
+  background-size: cover;
+  background-position-x: 25%;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  width: 30rem;
+  padding: 3rem 1.5rem;
+  cursor: pointer;
+  filter: brightness(0.75);
+  transform: scale(1);
+  transition: box-shadow 0.5s ease, transform 0.5s ease, filter 0.5s ease,
+    z-index 0s 0.5s ease;
+  scroll-snap-align: center;
+  @media (pointer: fine) {
+    &:hover {
+      box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.6);
+      filter: brightness(1);
+      transform: scale(1.05);
+      z-index: 1;
+      transition: box-shadow 1s ease, transform 1s ease, filter 1s ease,
+        z-index 0s 1s ease;
+    }
+  }
+}
+
+.size_1 {
+  height: 100%;
+}
+.size_2 {
+  height: 50%;
+}
+.size_3 {
+  height: 50%;
+}
+
+@media (max-height: 800px) {
+  .size_2, .size_3 {
+    height: 100%;
+  }
+}
+
+.title,
+.subtitle {
+  span {
+    background: $brand-gradient;
+    box-decoration-break: clone;
+  }
+}
+
+.title {
+  margin: 0 0 0.5em;
+  span {
+    padding: 0.8rem 1.2rem;
+    line-height: 2.2;
+    text-transform: uppercase;
+  }
+}
+
+.subtitle {
+  font-size: $small-font-size;
+  span {
+    padding: 0.3rem 1.2rem;
+    line-height: 1.6;
+  }
+}

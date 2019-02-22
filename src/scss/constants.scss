@@ -1,0 +1,50 @@
+
+$default-font-size: 1.6rem;
+$small-font-size: 1.2rem;
+
+$header-height: 5rem;
+$header-height-px: 50px;
+
+// 1. Colors
+// ==========================================================================
+
+/* MASTER PALETTE */
+$color1: rgba(48, 48, 48, 1);
+$color2: rgba(0, 129, 183, 1);
+$color3: rgba(123, 40, 125, 1);
+$color4: rgba(56, 78, 119, 1);
+$color5: rgba(224, 251, 252, 1);
+
+
+$primary-color: $color4 !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: $color1 !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
+
+$brand-gradient: linear-gradient(45deg, rgba(123, 40, 125, 1) 0%, rgba(0, 129, 183, 1) 100%);
+
+// 13. Navigation Bar
+// ==========================================================================
+
+$navbar-height: 64px !default;
+$navbar-height-mobile: 56px !default;
+$navbar-font-size: 1rem !default;
+$navbar-font-color: #fff !default;
+$navbar-brand-font-size: 2.1rem !default;
+
+
+// 20. Typography
+// ==========================================================================
+
+$off-black: rgba(0, 0, 0, 0.87) !default;
+// Header Styles
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;

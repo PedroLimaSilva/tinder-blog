@@ -1,0 +1,11 @@
+@import '../../scss/constants.scss';
+
+.app {
+  display: flex;
+  flex-flow: column;
+}
+
+main {
+  flex: 1;
+  font-size: $default-font-size;
+}
