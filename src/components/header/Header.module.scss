@@ -9,7 +9,6 @@
     0 9px 7px -8px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: $navbar-height;
-  line-height: $navbar-height-mobile;
   position: fixed;
   z-index: 10;
   display: flex;
@@ -20,13 +19,12 @@
 
 // Logo
 .brand_logo {
-  position: absolute;
   color: $navbar-font-color;
   display: inline-block;
   font-size: $navbar-brand-font-size;
   padding: 0;
   white-space: nowrap;
-  height: 100%;
+  height: $navbar-height - 3px;
   img {
     height: 100%;
   }
